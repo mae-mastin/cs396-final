@@ -12,6 +12,11 @@ h2, h3, p {
   text-align: center;
 }
 
+.ref {
+  margin-top: 30px;
+  font-size: small;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
