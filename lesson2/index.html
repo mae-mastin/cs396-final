@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        In the real world, we have to repeat things that we do a lot. 
+      </p>
+      <img src="repeat.svg" class="illustration">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        For example, think about your day! You might wake up, 
+        get ready, go to work or school, come home, 
+        eat dinner, get ready for bed, and go to sleep. 
+        You repeat these things every day! 
+      </p>
+      <img src="bed.svg" class="illustration">
+      <img src="school.svg" class="illustration">
+      <img src="eat.svg" class="illustration">
+      <img src="bed.svg" class="illustration">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        One of the really cool things that we can do with computers 
+        is to repeat tasks a lot of times.  
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        For example, imagine that you want the computer to draw a square, 
+        but you want it to draw the square 100 times.   
+      </p>
+      <img src="1square.svg" class="illustration sqr">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        You could tell the 
+        computer to draw the square, and then tell it again, and then 
+        tell it again, up to 100 times - or you could use something 
+        called a <em>loop</em>.   
+      </p>
+      <img src="3squares.svg" class="illustration sqr">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        A <em>loop</em> is something that you can use to tell the computer 
+        to repeat a task a lot of times.    
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        So, instead of telling the computer 
+        to draw a square over and over, you could just say something 
+        like "draw a square 100 times" and the computer would draw 
+        the square 100 times!    
+      </p>
+      <img src="100squares.svg" class="illustration sqr">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Loops are good because we only have to give the computer instructions once. 
+        We don't have to type out "draw a square draw a square draw a square" 100 times. 
+        We just have to say "draw a square 100 times" and the computer knows what to do.      
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        This means that, 
+        if there are mistakes in our instructions, 
+        we can find and fix them easily.  
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Let's practice with loops! 
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade activity">
+    <br>
+    <div class="algorithm-background">
+      <p class="algorithm">INSTRUCTIONS</p>
+      <p class="algorithm">For 3 times:</p>
+      <p class="algorithm" id="square">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw a square</p>
+      <p class="algorithm" id="roof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw a roof</p>
+      <p class="algorithm" id="door">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw a door</p>
+    </div>
+    <br>
+    <p id="error-msg"></p>
+    <p id="instructions">The first instruction is to draw a square. Click "Draw Square" and then follow the rest of the instructions.</p>
+    <button type="button" class="button" onclick="buttonHandler('square')">DRAW SQUARE</button>
+    <button type="button" class="button" onclick="buttonHandler('roof')">DRAW ROOF</button>
+    <button type="button" class="button" onclick="buttonHandler('door')">DRAW DOOR</button>
+    <br>
+    <img src="houses0.svg" class="house" id="h0">
+    <img src="houses1.svg" class="house" id="h1" style="display:none">
+    <img src="houses2.svg" class="house" id="h2" style="display:none">
+    <img src="houses3.svg" class="house" id="h3" style="display:none">
+    <img src="houses4.svg" class="house" id="h4" style="display:none">
+    <img src="houses5.svg" class="house" id="h5" style="display:none">
+    <img src="houses6.svg" class="house" id="h6" style="display:none">
+    <img src="houses7.svg" class="house" id="h7" style="display:none">
+    <img src="houses8.svg" class="house" id="h8" style="display:none">
+    <img src="houses9.svg" class="house" id="h9" style="display:none">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Nice job! If you want to learn more about loops, check out this resource.    
+      </p>
+      <a href="https://www.youtube.com/watch?v=r3Ti5Xp9W8A">Video from Kodable</a>
+    </div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#8249;</a>
+<a class="next" onclick="plusSlides(1)">&#8250;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html> 

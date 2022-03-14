@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        The cool thing about computer science is 
+        that it uses information about the real world 
+        (called data) to make fun things with computers, 
+        like <br> 
+        games <img src="game.svg" class="illustration"> <br>
+        calculators <img src="calculator.svg" class="illustration"><br>
+        books <img src="book.svg" class="illustration"> <br>
+        and pretty much 
+        anything else you can think of!
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        For example, if you're going to make a game 
+        about a dog, the computer might need some data 
+        that comes from information about the real world. 
+        It might need to know the dog's name, age, 
+        favorite color, and maybe if it likes treats or 
+        not. 
+      </p>
+      <img src="dog.svg" class="illustration">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        In the real world, we have many different types 
+        of things that we need to think about.
+      </p>
+      <img src="apple.svg" class="illustration">
+      <img src="speech.svg" class="illustration">
+      <img src="number.svg" class="illustration">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        The computer knows about these different 
+        types of things so that we can represent 
+        lots of different real-world data.
+      </p>
+      <img src="world.svg" class="illustration">
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Let's go over a few of the most common <em>data types</em>! 
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        A <em>string</em> is a word, like "computer" or "hello" or "fun". <br>
+        Which of these is a <em>string</em>?
+      </p>
+      <button type="button" class="button" onclick="buttonHandler1('correct')">"apple"</button>
+      <button type="button" class="button" onclick="buttonHandler1('wrong')">100</button>
+      <p id="feedback1"></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        An <em>integer</em> is a whole number, like 12 or 100000 or -3.<br>
+        Which of these is an <em>integer</em>? 
+      </p>
+      <button type="button" class="button" onclick="buttonHandler2('wrong')">"hello"</button>
+      <button type="button" class="button" onclick="buttonHandler2('wrong')">true</button>
+      <button type="button" class="button" onclick="buttonHandler2('correct')">396</button>
+      <p id="feedback2"></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        A <em>boolean</em> is a special value that is called either true or false.<br>
+        Which of these is a <em>boolean</em>?  
+      </p>
+      <button type="button" class="button" onclick="buttonHandler3('wrong')">100</button>
+      <button type="button" class="button" onclick="buttonHandler3('correct')">false</button>
+      <button type="button" class="button" onclick="buttonHandler3('wrong')">"dog"</button>
+      <p id="feedback3"></p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Let's practice with all these data types!  
+      </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="target3.svg" class="target droppable" id="target1">
+    <img src="target2.svg" class="target droppable" id="target2">
+    <img src="target1.svg" class="target droppable" id="target3">
+    <p id="activityText1">Drag this data type to the real-world concept it matches above.</p>
+    <img src="integer.svg" id="integer">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="target3.svg" class="target droppable" id="target1">
+    <img src="target2.svg" class="target droppable" id="target2">
+    <img src="target1.svg" class="target droppable" id="target3">
+    <p id="activityText2">Drag this data type to the real-world concept it matches above.</p>
+    <img src="string.svg" id="str">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="target3.svg" class="target droppable" id="target1">
+    <img src="target2.svg" class="target droppable" id="target2">
+    <img src="target1.svg" class="target droppable" id="target3">
+    <p id="activityText3">Drag this data type to the real-world concept it matches above.</p>
+    <img src="boolean.svg" id="bool">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="text-box">
+      <p>
+        Nice job! Here are some resources to check out 
+        if you want to learn more about data types.  
+      </p>
+      <a href="https://www.bbc.co.uk/bitesize/guides/zwmbgk7/revision/3">Article from BBC BiteSize(scroll down to "Data Types")</a><br>
+      <a href="https://www.w3schools.com/python/python_datatypes.asp">Article from W3Schools</a><br>
+      <a href="https://www.youtube.com/watch?v=A37-3lflh8I">Video from Jabrils</a>
+    </div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#8249;</a>
+<a class="next" onclick="plusSlides(1)">&#8250;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html> 
